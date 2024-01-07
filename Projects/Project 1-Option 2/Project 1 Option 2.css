@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+#container{
+    background: linear-gradient(#281EFF,#2DFF8C);
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+}
+
+h1{
+    font-family: 'Satisfy', 'cursive';
+    font-size: 10rem;
+    font-weight: 100;
+    text-align: center;
+    margin: -20px;
+  }
+
+h2{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    margin: 20px 10%;
+    text-align: center;
+}
+
+form{
+    
+    display: flex;
+    gap: 37.5px;
+    align-items: last baseline;
+    
+    
+}
+
+.labelAbove{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+label{
+    font-size: 1rem;
+}
+
+.labelAbove input{
+    width: 22vw;
+    height: 7vh;
+    background-color: #F6F6F624;
+    border: white solid;
+}
+
+#submit{
+    width: 10.7vw;
+    height: 7vh;
+    font-size: 1rem;
+    border: none;
+}
+
+@media (width<=800px) {
+    form{
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    h1{
+        font-size: 3.75rem;
+        margin: 20px 10%;
+        text-align: center;
+      }
+
+    h2{
+        font-size: 1.125rem;
+        margin: 0px 10%;
+        text-align: center;
+      }
+
+    label{
+        font-size: 0.68rem;
+    }
+
+    .labelAbove input{
+        width: 81vw;
+        height: 6vh;
+    }
+
+    #submit{
+        width: 81vw;
+        height: 6vh;
+        font-size: 0.9rem;
+    }
+}
