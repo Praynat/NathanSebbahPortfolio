@@ -113,7 +113,6 @@ header{
     justify-content: center;
     width: 50vw;
     height: 60%;
-    /* background-color: #04398470; */
     backdrop-filter: blur(20px) saturate(1.0);
     /* border: solid #061429; */
     border-radius: 50vw;
