@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    max-width: none;
 }
 
 html{
@@ -25,9 +26,11 @@ body{
 #container1{
     display: flex;
     flex-direction: column;
-    background-image: url(../images-portfolio/First-Page-Background4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    align-items: center;
+    /* background-image: url(../images-portfolio/First-Page-Background4.jpg);
+    background-size: 150%;
+    transform: rotate(180deg); */
+    /* background-repeat: no-repeat; */
     align-items: center;
     justify-content: center;
     gap: 5vh;
@@ -40,6 +43,7 @@ body{
     left: 2vw;
     display: flex;
     align-items: center;
+    opacity: 0.95;
 }
 
 .menuTextContainer{
@@ -85,13 +89,27 @@ body{
 }
 
 /* Scroll Down Animation */
-    .scroll-downs {
+    #scrollContainer {
         position: absolute;
-        bottom: 2vh;
-        right: 1.3vw;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 0px;
+        gap: 2vh;
         width :34px;
-        height: 55px;
-        scale: 0.9;
+        height: 15vh;
+        margin-bottom: 2vh;
+
+        scale: 0.8;
+    }
+    #scrollText{
+        color: rgb(255, 255, 255);
+        text-wrap: nowrap;
+        text-align: center;
+        font-family: 'Annie Use Your Telescope', cursive;
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+        font-weight: 50;
     }
     .mousey {
         width: 3px;
@@ -99,7 +117,7 @@ body{
         height: 35px;
         border: 2px solid #fff;
         border-radius: 25px;
-        opacity: 0.75;
+        opacity: 0.95;
         box-sizing: content-box;
     }
     .scroller {
@@ -126,6 +144,7 @@ body{
     justify-content: space-around;
     align-items: center;
     height: 10vh;
+
 
 }
 
@@ -168,21 +187,22 @@ header{
 
 
 
-ul{
+header ul{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
     gap: 4vw;
+    opacity: 0.95;
 }
 
-ul  li {
+header ul  li {
     display: inline-block;
     color: white;
 }
 
-li a{
+header li a{
     color: white;
     text-align: center;
     text-decoration: none;
@@ -202,7 +222,8 @@ li a{
 }
 
 #emptyContainer2{
-    height: 12vh;
+    height: 11vh;
+    width: 100vw;
 }
 
 #aboutSkillContainer{
@@ -449,7 +470,80 @@ svg {
 /* Gallery Page */
 
 #container3{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container3 h3{
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 4rem;
+    letter-spacing: 6px;
+    width: 80vw;
+    text-align: center;
+    color: white;
+    padding: 0.5rem;
+}
+
+#galleryContainer{
+    height: 63vh;
+    width: 100vw;
+}
+#galleryMenu{
+    display: flex;
+    justify-content: center;
+    margin: 5vh 0;
+    opacity: 0.95;
+}
+
+
+#galleryMenu ul  li {
+    display: inline-block;
+    color: white;
+    margin: 0 1vw;
+}
+
+#galleryMenu li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+
+#galleryCards{
+    display: flex;
+    justify-content:start;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
     
+}
+
+/* #galleryPagesContainer{
+    display: flex;
+    overflow: scroll;
+} */
+
+.cardsContainer{
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 0;
+    width: 100vw;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    border: #e91e6f solid;
+    border-radius: 20px;
+    margin: 1vh 1vw 1vh 1vw ;
+}
+.card:hover{
+    transform: translateY(-1vh) ;
 }
 
 /* Contact Page */
