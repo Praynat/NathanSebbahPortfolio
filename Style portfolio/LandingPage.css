@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images-portfolio/Background\ image.jpg);
+}
+
+#headerContainer{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 10vh;
+
+
+}
+
+#logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    position: relative;
+    color:#e91e6f;
+    margin-left: 4vh;
+    /* right: 16vw; */
+}
+#emptyContainer1{
+    width: 13.5%;
+}
+
+#imgLogo{
+    border: 0.02rem rgb(0, 0, 0) solid;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    
+}
+
+#textLogo{
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 1.5rem;
+}
+
+#mainContainer{
+    display: flex;
+
+}
+
+#infoContainer{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#infoContainer h2{
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: #ea1c6e;
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+
+#infoContainer p{
+    color: white;
+    margin: 5vh 10vh;
+    text-align: center;
+}
+
+#projectPreview{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+
+}
+
+#projectPreview img{
+    width: 80%;
+}

@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    max-width: none;
 }
 
 html{
@@ -472,12 +471,11 @@ svg {
 #container3{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#container3 h3{
+#container3 > h3{
     font-family: 'Annie Use Your Telescope', cursive;
     font-size: 4rem;
     letter-spacing: 6px;
@@ -485,11 +483,15 @@ svg {
     text-align: center;
     color: white;
     padding: 0.5rem;
+    margin-top: 2rem ;
+    /* border: #ea1c6e solid; */
+    border-radius: 10vh;
 }
 
 #galleryContainer{
     height: 63vh;
     width: 100vw;
+    
 }
 #galleryMenu{
     display: flex;
@@ -516,34 +518,69 @@ svg {
 
 
 #galleryCards{
-    display: flex;
-    justify-content:start;
     overflow: scroll;
-    scroll-snap-type: x mandatory;
-    
+    scroll-snap-type:x mandatory;
 }
 
-/* #galleryPagesContainer{
+#galleryPagesContainer{
+    width: 400vw;
     display: flex;
-    overflow: scroll;
-} */
+}
 
 .cardsContainer{
     scroll-snap-align: start;
     display: flex;
     justify-content: center;
     margin: 0 0 0 0;
-    width: 100vw;
+    flex: 1;
+   
 }
 .card{
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 215px;
     height: 300px;
     border: #e91e6f solid;
     border-radius: 20px;
     margin: 1vh 1vw 1vh 1vw ;
+    overflow: hidden;
+    color: white;
+    text-align: center;
 }
 .card:hover{
     transform: translateY(-1vh) ;
+}
+
+.card img{
+    max-width: 100%;
+}
+.cardText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+.card h3{
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.card p{
+    
+}
+
+.card a{
+    width: 60%;
+    border-radius: 1rem;
+    background-color: #ea1c6e;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    margin-top: 1vh;
+    text-decoration: none;
 }
 
 /* Contact Page */
@@ -552,6 +589,66 @@ svg {
     
 }
 
-#container5{
+
+#contactContainer{
+    display: flex;
+    height: 89vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contactTitle{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #ea1c6e;
+   font-size: 5rem;
+   text-align: center;
+}
+
+#contactForm {
+    color: #ea1c6e;
     
+}
+
+#contactForm > form{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    justify-content: start;
+}
+
+.inputForm{
+    background-color: transparent;
+    border: #ea1c6e solid;
+    border-radius: 0.5rem;
+    width: 30vw;
+    height: 7vh;
+    padding: 1rem;
+    color: white;
+}
+
+#nameAndPhoneContainer{
+    display: flex;
+    gap: 1vw;
+}
+
+#name , #PhoneNumber{
+    width: 14.5vw;
+}
+#message{
+    height: 14vh;
+}
+#message::placeholder{
+    vertical-align: top;
+}
+
+#submitInput{
+    width: 30vw;
+    height: 5vh;
+    border-radius: 0.5rem;
+    background-color: #ea1c6e;
+    color: white;
+    font-size: 1.2rem;
 }
