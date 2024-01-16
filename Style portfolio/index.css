@@ -186,7 +186,7 @@ header{
 
 
 
-header ul{
+header ul, .menuTextContainer ul{
     width: 100%;
     display: flex;
     align-items: center;
@@ -196,12 +196,12 @@ header ul{
     opacity: 0.95;
 }
 
-header ul  li {
+header ul  li, .menuTextContainer ul li{
     display: inline-block;
     color: white;
 }
 
-header li a{
+header li a, .menuTextContainer li a{
     color: white;
     text-align: center;
     text-decoration: none;
@@ -226,16 +226,20 @@ header li a{
 }
 
 #aboutSkillContainer{
-    height: 63vh;
+    height: 80vh;
     margin: 2% 0 0 0;
     width: 100%;
     display: flex;
+    align-items: center ;
+    justify-content: space-evenly;
     
 }
 
 .containerBackground{
     background-color: #1D457D;
+    border: #000000 solid;
     border-radius: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 #about{
     height: 58vh;
@@ -244,7 +248,7 @@ header li a{
     flex-direction: column;
     align-items: center;
     margin: 0 0 0 10vh;
-    flex-basis: 44%;
+    flex-basis: 35%;
     
 }
 
@@ -291,6 +295,7 @@ header li a{
 /* Skills */
 #skillsContainer{
     display: flex;
+    height: 58vh;
     flex-basis: 56%;
 }
 .skill{
@@ -313,10 +318,15 @@ header li a{
     font-family: 'Concert One', sans-serif;
     font-size: 1.5rem;
     color: white;
-    text-align: left;
+    text-align: center;
     font-weight: 500;
     margin-bottom: 4vh;
-    top: 5%;
+    padding: 1rem 1.5rem;
+    
+    background-color: #1D457D;
+    border: #000000 solid;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .centerText{
@@ -424,7 +434,7 @@ svg {
 
 
 /* Best Projects */
-#bestContainer{
+/* #bestContainer{
     display: flex;
     align-items: center;
     gap: 8vh;
@@ -465,7 +475,7 @@ svg {
  .bestImageContainer::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #1D457D;
-}  
+}   */
 /* Gallery Page */
 
 #container3{
@@ -541,13 +551,19 @@ svg {
     gap: 2vh;
     width: 215px;
     height: 300px;
-    border: #e91e6f solid;
-    border-radius: 20px;
     margin: 1vh 1vw 1vh 1vw ;
     overflow: hidden;
+
     color: white;
     text-align: center;
+
+    background-color: #1D457D;
+    border: #000000 solid;
+    border-width: 0.3rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .card:hover{
     transform: translateY(-1vh) ;
 }
@@ -594,21 +610,23 @@ svg {
     display: flex;
     height: 89vh;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 #contactTitle{
+   background-color: #032857;
+   padding: 11vh 6vw;
    display: flex;
    align-items: center;
    justify-content: center;
-   color: #ea1c6e;
+   color: #ffffffe3;
    font-size: 5rem;
    text-align: center;
 }
 
-#contactForm {
-    color: #ea1c6e;
-    
+#contactForm{
+   padding: 11vh 6vw; 
+   
 }
 
 #contactForm > form{
@@ -620,35 +638,47 @@ svg {
 }
 
 .inputForm{
-    background-color: transparent;
-    border: #ea1c6e solid;
+    border: black solid;
+    border-bottom: #ea1c6f solid;
     border-radius: 0.5rem;
     width: 30vw;
     height: 7vh;
     padding: 1rem;
     color: white;
+    background-color: #032857;
+    
 }
 
 #nameAndPhoneContainer{
     display: flex;
     gap: 1vw;
+    
+}
+
+.formInput{
+    background-color: #1D457D;
 }
 
 #name , #PhoneNumber{
     width: 14.5vw;
 }
+
+form ::placeholder{
+    color: rgba(255, 255, 255, 0.868);
+    font-family: cursive;
+}
+
 #message{
     height: 14vh;
 }
-#message::placeholder{
-    vertical-align: top;
-}
 
 #submitInput{
-    width: 30vw;
+    width: 10vw;
     height: 5vh;
+    border: #000000 solid;
     border-radius: 0.5rem;
-    background-color: #ea1c6e;
-    color: white;
-    font-size: 1.2rem;
+    background-color: #e91e6f;
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
 }

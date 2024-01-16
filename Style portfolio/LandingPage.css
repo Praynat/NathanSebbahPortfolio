@@ -48,11 +48,10 @@ body{
 
 #mainContainer{
     display: flex;
-
 }
 
 #infoContainer{
-    width: 50vw;
+    width: 40vw;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -63,17 +62,29 @@ body{
 #infoContainer h2{
     font-family: 'Annie Use Your Telescope', cursive;
     color: #ea1c6e;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     letter-spacing: 0.2rem;
+    margin-bottom: 3vh;
 }
 
 #infoContainer p{
     color: white;
-    margin: 5vh 10vh;
     text-align: center;
+    margin-bottom: 2vh;
+}
+.containerBackground{
+    background-color: #1D457D;
+    border: white solid;
+    border-radius: 10vh;
+    width: 70%;
+    padding: 4vh 2vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+#projectPreview{
+    width: 60vw;
+}
 #projectPreview{
     width: 50vw;
     height: 80vh;
@@ -83,5 +94,5 @@ body{
 }
 
 #projectPreview img{
-    width: 80%;
+    width: 100%;
 }

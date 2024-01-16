@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <!-- First Page -->
@@ -74,11 +73,11 @@
             <div id="about" class="containerBackground">
                 <div id="aboutImageContainer">
                     <Img src="./images-portfolio/Logo.jpg" id="aboutImage"></Img>               
-                    <h2>Hi there!<br/>I'm Nathan.</h2>
+                    <h2>Hello!<br/>I'm Nathan.</h2>
                 </div>
 
                 <div id="aboutImageContainer">
-                    <p>I am a full stack web developer with experience in HTML, CSS, JavaScript Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quam nostrum illo laborum voluptates tempora similique reprehenderit quia. Labore ab, rem necessitatibus corrupti neque velit molestiae quam eaque ex incidunt?</p>
+                    <p>I am a full stack web developer with experience in HTML, CSS, JavaScript Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quam nostrum illo laborum voluptates tempora similique reprehenderit quia. </p>
                 </div>
             </div>
             <div id="skillsContainer">
@@ -118,7 +117,7 @@
             
            
         </div>
-        <div id="bestContainer" class="">
+        <!-- <div id="bestContainer" class="">
             <h2>Best Works</h2>
             <div class="bestImageContainer">
                 <img src="./images-portfolio/Gallery/Option 1.jpg" alt="">
@@ -128,7 +127,7 @@
                 <img src="./images-portfolio/Gallery/Option 2.jpg" alt="">
                 <img src="./images-portfolio/Gallery/Option 3.jpg" alt="">
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- Third Page -->
@@ -138,7 +137,10 @@
         </div>
         <h3 class="">A Small Selection of my Work</h3>
         <div id="galleryContainer">
-            <div id="galleryMenu">
+
+            <!-- for later use -->
+
+            <!-- <div id="galleryMenu"> 
                 <ul>
                     <li>
                         <a href="#allCards">All</a>
@@ -153,7 +155,8 @@
                         <a href="#reactCards">React</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
+
             <div id="galleryCards">
                 <div id="galleryPagesContainer"> 
                     <div class="cardsContainer" id="allCards">
@@ -229,39 +232,20 @@
         <div id="emptyContainer2">
         </div>
         <div id="contactContainer">
-            <h1 id="contactTitle">#Contact <br> Me</h1> 
-            <div id="contactForm">
+            <h1 id="contactTitle" class="containerBackground">#Contact <br> Me</h1> 
+            <div id="contactForm" class="">
                 <form>
                     <div id="nameAndPhoneContainer">
-                        <div id="formName" class="formInput">
-                            <input  type="text" id="name" class="inputForm" placeholder="Your Name" required>
-                        </div>
-                        
-                        <div id="formPhoneNumber" class="formInput">
-                            <input  type="tel" id="PhoneNumber" class="inputForm" placeholder="Phone Number" required>
-                        </div>
+                        <input  type="text" id="name" class="inputForm" placeholder="Your Name" required>
+                        <input  type="tel" id="PhoneNumber" class="inputForm" placeholder="Phone Number" required>
                     </div>
 
-                    <div id="formEmail" class="formInput">
                         <input type="email" id="email" class="inputForm" placeholder="Email" required>
-                    </div>
-
-                    <div id="formMessage" class="formInput">
                         <textarea rows="5" cols="60" id="message" class="inputForm" placeholder="Write Your Message" required></textarea>
-                    </div>
-                
-                    <div id="sendButton" class="formInput">
                         <input id="submitInput" type="submit" value="Send">
-                    </div>
-             </div>
+                </form>
+            </div>
         </div>  
-    </div>
-
-    <!-- Fifth Page -->
-    <div id="container5" class="container">
-        
-    </div>
-
-    
+    </div>    
 </body>
 </html>
