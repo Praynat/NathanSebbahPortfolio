@@ -39,16 +39,23 @@ body{
 .menuContainer{
     position: absolute;
     top: 2vh;
-    left: 2vw;
+    left: 0px;
+    margin-left: 2vw;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     opacity: 0.95;
 }
 
 .menuTextContainer{
     display: none;
-    position: relative;
-    left: 50vh;
+}
+
+#menuIconContainer img{
+    
+}
+
+.menuContainer:hover{
+    width: 95vw;
 }
 
 .menuContainer:hover .menuTextContainer{
@@ -58,6 +65,11 @@ body{
 
 .menuContainer:hover .menuIcon{
     scale: 1.1;
+}
+
+#emptyContainer3{
+    width: 3vw;
+    height: 4vh;
 }
 
 #container1 h1{
@@ -182,6 +194,7 @@ header{
 #textLogo{
     font-family: 'Annie Use Your Telescope', cursive;
     font-size: 1.5rem;
+
 }
 
 
@@ -432,51 +445,51 @@ svg {
     }
   }
 
+/* For later use */
+    /* Best Projects */
+    /* #bestContainer{
+        display: flex;
+        align-items: center;
+        gap: 8vh;
+        overflow-x: auto;
+    }
+    #bestContainer h2{
+        background-color: #1D457D;
+        border-radius: 10rem;
+        color: white;
+        font-family: 'Concert One', sans-serif;
+        margin-left: 8vh;
+        padding: 1.5rem;
+        text-align: center;
+        font-weight: 500;
+    }
+    .bestImageContainer{
+        display: flex;
+        align-items: center;
+        gap: 4vw;
+        overflow-x: auto;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+        padding-bottom:1vh ;
+    }
 
-/* Best Projects */
-/* #bestContainer{
-    display: flex;
-    align-items: center;
-    gap: 8vh;
-    overflow-x: auto;
-}
-#bestContainer h2{
-    background-color: #1D457D;
-    border-radius: 10rem;
-    color: white;
-    font-family: 'Concert One', sans-serif;
-    margin-left: 8vh;
-    padding: 1.5rem;
-    text-align: center;
-    font-weight: 500;
-}
-.bestImageContainer{
-    display: flex;
-    align-items: center;
-    gap: 4vw;
-    overflow-x: auto;
-    margin-top: 2vh;
-    margin-bottom: 1vh;
-    padding-bottom:1vh ;
-}
+    .bestImageContainer img{
+        height: 16vh;
+        border-radius: 1vw;
+    }
 
-.bestImageContainer img{
-    height: 16vh;
-    border-radius: 1vw;
-}
-
-.bestImageContainer::-webkit-scrollbar{
-    height: 10px;
-    margin-top: 1vh;
- }
- .bestImageContainer::-webkit-scrollbar-track{
-    border-radius: 10px;
- } 
- .bestImageContainer::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #1D457D;
-}   */
-/* Gallery Page */
+    .bestImageContainer::-webkit-scrollbar{
+        height: 10px;
+        margin-top: 1vh;
+    }
+    .bestImageContainer::-webkit-scrollbar-track{
+        border-radius: 10px;
+    } 
+    .bestImageContainer::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #1D457D;
+    }   */
+    /* Gallery Page */
 
 #container3{
     width: 100vw;
@@ -487,7 +500,7 @@ svg {
 }
 #container3 > h3{
     font-family: 'Annie Use Your Telescope', cursive;
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 6px;
     width: 80vw;
     text-align: center;
@@ -528,17 +541,17 @@ svg {
 
 
 #galleryCards{
-    overflow: scroll;
+    
     scroll-snap-type:x mandatory;
 }
 
 #galleryPagesContainer{
-    width: 400vw;
+    margin-top: 8vh;
+    width: 100vw;
     display: flex;
 }
 
 .cardsContainer{
-    scroll-snap-align: start;
     display: flex;
     justify-content: center;
     margin: 0 0 0 0;

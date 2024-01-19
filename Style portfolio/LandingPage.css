@@ -15,8 +15,9 @@ body{
     justify-content: start;
     align-items: center;
     height: 10vh;
-
-
+    a{
+        text-decoration: none;
+    }
 }
 
 #logo{
@@ -44,53 +45,96 @@ body{
 #textLogo{
     font-family: 'Annie Use Your Telescope', cursive;
     font-size: 1.5rem;
+    text-decoration: none;    
 }
 
 #mainContainer{
-    display: flex;
+    width: 100vw;
+    height: 90vh;
+}
+
+#hoverContainer{
+    position: absolute;
+    width: 50vw;
+    height: 80vh;
+    left:25%;
 }
 
 #infoContainer{
-    width: 40vw;
+    position: absolute;
+    width: 30vw;
     height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#infoContainer h2{
-    font-family: 'Annie Use Your Telescope', cursive;
-    color: #ea1c6e;
-    font-size: 4rem;
-    text-align: center;
-    letter-spacing: 0.2rem;
-    margin-bottom: 3vh;
-}
-
-#infoContainer p{
+    left:1%;
+    opacity: 1;
+  
     color: white;
     text-align: center;
-    margin-bottom: 2vh;
+    padding: 2vw;
 }
+
+#skillsAndLinks{
+    position: absolute;
+    width: 30vw;
+    height: 80vh;
+    left:30%;
+    opacity: 1;
+  
+    color: white;
+    text-align: center;
+    padding: 2vw;
+}
+
 .containerBackground{
+    position: relative;
+    top: 25%;
+    width: 80%;
+    margin: auto;
+
     background-color: #1D457D;
-    border: white solid;
+    border: rgb(0, 0, 0) solid;
     border-radius: 10vh;
-    width: 70%;
-    padding: 4vh 2vw;
+    padding: 4vh 3vw;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-#projectPreview{
-    width: 60vw;
+#infoContainer h2{
+    font-family: cursive;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3vh;
 }
+
+
+
+#hoverContainer:hover #infoContainer{
+    opacity: 1;
+    left:-50%;
+    transition: opacity 1s, left 2.5s;
+    
+}
+
+#hoverContainer:hover #skillsAndLinks{
+    opacity: 1;
+    left:90%;
+    transition: opacity 1s, left 2.5s;
+    transition-delay: 1s;
+}
+
+#hoverContainer:hover #projectPreview{
+    left:0%;
+    transition: left 2s;
+}
+
 #projectPreview{
+    z-index: 10;
+    opacity: 1;
+    position: absolute;
+    left: 0%;
     width: 50vw;
     height: 80vh;
     display: flex;
     align-items: center;
-
 }
 
 #projectPreview img{
