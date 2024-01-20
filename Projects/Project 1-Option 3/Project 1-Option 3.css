@@ -86,7 +86,7 @@ input{
 }
 
 
-@media (width<=800px) {
+@media (width <=800px) {
     
     #container{
         flex-direction: column;

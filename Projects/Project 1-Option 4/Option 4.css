@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#envelopeContainer{
+    width: 100vw;
+    height: 68.7vh;
+    background-image:url(./Image/Envelope\ Big.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#envelopeContainer>h1{
+    font-size: 5.5rem;
+    font-family: Assistant;
+    font-weight: 700;
+    color: #D3E10E;
+    text-align: center;
+    margin: 1vh 10vw;
+}
+
+#envelopeContainer>p{
+    margin-top: 2vh;
+    font-size: 1.25rem;
+    font-family: Assistant;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin: 1vh 10vw;
+}
+
+
+#formContainer{
+    width: 100vw;
+    height: 31.3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    direction: rtl;
+    gap: 2vw;
+    justify-content: center;
+    align-items: end;
+}
+
+.labelAbove{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: Assistant;
+    font-weight: 700;
+}
+
+#formContainer input{
+    width: 22vw;
+    height: 5vh;
+    background-color: #F6F6F6;
+    border: none;
+    border-bottom: #D3E10E solid;
+}
+
+#formContainer #submit{
+    background-color: #D3E10E;
+    border: none;
+    width: 11vw;
+    height: 5vh;
+    font-size: 2rem;
+    font-family: Assistant;
+    font-weight: 700;
+}
