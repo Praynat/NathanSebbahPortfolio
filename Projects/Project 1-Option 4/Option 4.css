@@ -78,3 +78,55 @@ form{
     font-family: Assistant;
     font-weight: 700;
 }
+
+@media (width<=800px) {
+    #envelopeContainer{
+        width: 100vw;
+        height: 50vh;
+        background-image:url(./Image/Envelope\ Small.png);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #envelopeContainer>h1{
+        display: none;
+    }
+    
+    #envelopeContainer>p{
+        display: none;
+    }
+
+
+
+    #formContainer{
+        height: 50vh;
+    }
+    
+    form{
+        gap: 4vh;
+        flex-direction: column;
+    }
+    
+    .labelAbove{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        font-family: Assistant;
+        font-weight: 700;
+    }
+    
+    #formContainer input{
+        width: 80vw;
+        height: 5vh;
+    }
+    
+    #formContainer #submit{
+        width: 80vw;
+        height: 6vh;
+    }
+}
