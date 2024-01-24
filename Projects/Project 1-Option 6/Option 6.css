@@ -1,0 +1,270 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+#mainContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#formContainer{
+    flex: 2;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#straightenContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+
+    h1{
+        color: #FDBD03;
+        font-size: 2.4rem;
+        font-family: Heebo;
+        font-weight: 900;
+    }
+
+    p{
+        width: 60%;
+        font-size: 1rem;
+        font-family: Heebo;
+        font-weight: 400;
+        color:#020253 ;
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.labelAbove{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.2rem;
+}
+
+#nameEmailContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+label{
+    font-size: 0.7rem;
+    font-family: Heebo;
+    font-weight: 700;
+    color: #2C2C2C;
+}
+
+input{
+    height: 40px ;
+    background-color:#a5d6ffa1 ;
+    border: none;
+    border-bottom: #FDBD03 solid;
+}
+
+textarea{
+    background-color:#a5d6ffa1 ;
+    border: none;
+    border-bottom: #FDBD03 solid;
+}
+
+#submit{
+    background-color:#FDBD03 ;
+    border: none;
+    font-size: 1rem;
+    font-family: Heebo;
+    font-weight: 700;
+    width: 160px;
+    margin-top: 6%;
+}
+
+#pictureContainer{
+    flex: 1;
+
+    img{
+        width: 70%;
+    }
+}
+
+
+
+#topYellowBand{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 434px;
+    height: 16px;
+    background-color: #FDBD03;
+}
+
+#bottomYellowBand{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 1038px;
+    height: 16px;
+    background-color: #FDBD03;
+}
+
+#whatsappIcon{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 4rem;
+    background-image: url(./Image/Icon\ awesome-whatsapp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:45%;
+    background-color: #FDBD03;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#whatsappIcon:hover{
+    scale: 1.2;
+    rotate: 360deg;
+    transition: 1s ease;
+}
+
+#otherIcons{
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#otherIcons *{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:45%;
+    background-color: #FDBD03;
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#otherIcons *:hover{
+    scale: 1.2;
+    rotate: 360deg;
+    transition: 1s ease;
+}
+
+
+#facebookIcon{
+    background-image: url(./Image/facebook-app-symbol.png);
+}
+
+#InstagramIcon{
+    background-image: url(./Image/instagram.png);
+}
+
+#linkedinIcon{
+    background-image: url(./Image/linkedin.png);
+}
+
+#phoneIcon{
+    background-image: url(./Image/phone-call.png);
+}
+
+
+@media (width<=800px) {
+    #mainContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pictureContainer{
+        order: 1;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 1rem;
+        width: 100vw;
+        height: 8rem;
+        margin: 2rem 0px;
+        img{
+            object-fit: contain;
+        }
+    }
+
+    #formContainer{
+        order: 2;
+        width: 90vw;
+    }
+
+    #straightenContainer{
+        width: 90vw;
+        align-items: center;
+        h1{
+            margin-top: 2rem;
+        }
+        p{
+            width: 90%;
+            text-align: center;
+        }
+    }
+
+    form{
+        width: 90vw;
+    }
+    
+    #nameEmailContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input{
+        height: 45px ;
+        width: 100%;
+    }
+    
+    
+    #submit{
+        width: 100%;
+        margin-top: 6%;
+    }
+    
+    #icons{
+        position: relative;
+        order: 3;
+    }
+
+    #otherIcons{
+        position: relative;
+        bottom: 0rem;
+        left: 0rem;
+        margin-top: 10rem;
+        margin-bottom: 4rem;
+    }
+
+
+
+    #whatsappIcon{
+        display: none;
+    }
+    #bottomYellowBand{
+        position: absolute;
+        bottom: 0px;
+        margin: -20rem 0px;
+        order: 4;
+        width: 100vw;
+        height: 10px;
+    }
+}
