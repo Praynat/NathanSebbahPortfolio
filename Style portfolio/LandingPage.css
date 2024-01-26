@@ -61,6 +61,21 @@ body{
     left:25%;
 }
 
+#projectPreview{
+    display: flex;
+    z-index: 10;
+    opacity: 1;
+    left: 0%;
+    width: 50vw;
+    height: 80vh;
+    transition: 1s;
+}
+
+#projectPreview img{
+    margin: auto;
+    width: 100%;
+}
+
 #infoContainer{
     position: absolute;
     display: flex;
@@ -71,19 +86,12 @@ body{
     height: 80vh;
     left:1%;
     opacity: 1;
-  
+    
     color: white;
     text-align: center;
     padding: 2vw;
 
     transition: opacity 1s, left 1.5s;
-}
-
-#hoverContainer:hover #infoContainer{
-    opacity: 1;
-    left:-50%;
-    transition: opacity 1s, left 2s;
-    
 }
 
 #skillsAndLinks{
@@ -103,18 +111,13 @@ body{
     transition: opacity 1s, left 1.5s;
 }
 
-#hoverContainer:hover #skillsAndLinks{
-    opacity: 1;
-    left:90%;
-    transition: opacity 1s, left 2s;
-    
-}
 
 .containerBackground{
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: fit-content;
     width: 80%;
     
@@ -168,25 +171,8 @@ body{
     }
 }
 
-#projectPreview{
-    display: flex;
-    z-index: 10;
-    opacity: 1;
-    left: 0%;
-    width: 50vw;
-    height: 80vh;
-    transition: 1s;
-}
 
-#projectPreview img{
-    margin: auto;
-    width: 100%;
-}
 
-#hoverContainer:hover #projectPreview{
-    scale: 1.1;
-    transition: 2s;
-}
 
 .links{
     display: flex;
@@ -207,27 +193,121 @@ body{
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
-.links *:hover{
-    scale: 1.05;
-    
-}
 
+
+
+@media (width>=800px){
+    #hoverContainer:hover #infoContainer{
+        opacity: 1;
+        left:-50%;
+        transition: opacity 1s, left 2s;
+        
+    }
+
+    #hoverContainer:hover #skillsAndLinks{
+        opacity: 1;
+        left:90%;
+        transition: opacity 1s, left 2s;
+        
+    }
+
+    #hoverContainer:hover #projectPreview{
+        scale: 1.1;
+        transition: 2s;
+    }
+
+    .links *:hover{
+        scale: 1.05;
+        
+    }
+}
 
 
 @media (width<=800px) {
     
     #hoverContainer{
+        width: 90vw;
+        left:5%;
+    }
+    
+    #projectPreview{
+        left: 0%;
         width: 100vw;
-        height: 80vh;
     }
 
-    #projectPreview{
+    #projectPreview img{
+        position: relative;
+        bottom: 12.25%;
+    }
+
+    #infoContainer{
+        width: 50vw;
+        left:-0%;
+        top:40% ;
+    }
+    
+    #skillsAndLinks{
+        width: 50vw;
+        left:44%;
+        top:40% ;
+        
+        .containerBackground{
+            flex-direction: row-reverse;
+        }
+    }
+    
+    .links{
         display: flex;
-        z-index: 10;
-        opacity: 1;
-        left: 0%;
-        width: 90vw;
-        height: 80vh;
-        transition: 1s;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .links *{
+        font-size:clamp(0.3rem, 0.2000rem + 1.0000vw, 1.1rem);
+    }
+
+    .links *:hover{
+        scale: 1.05;
+        
+    }
+}
+
+
+
+
+
+
+
+
+@media (width<=600px) {
+    
+    #projectPreview img{
+        position: relative;
+        bottom: 20%;
+    }
+
+    #infoContainer{
+        width: 100vw;
+        left:-6%;
+        top:22% ;
+    }
+    
+    #skillsAndLinks{
+        width: 100vw;
+        left:-6%;
+        top:48% ;
+        
+        .containerBackground{
+            flex-direction: row-reverse;
+        }
+    }
+
+    #iconsContainer{
+        margin: 0rem 0rem;
+    }
+
+    .links *:hover{
+        scale: 1.05;
+        
     }
 }
