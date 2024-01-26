@@ -79,6 +79,13 @@ body{
     transition: opacity 1s, left 1.5s;
 }
 
+#hoverContainer:hover #infoContainer{
+    opacity: 1;
+    left:-50%;
+    transition: opacity 1s, left 2s;
+    
+}
+
 #skillsAndLinks{
     position: absolute;
     display: flex;
@@ -88,12 +95,19 @@ body{
     width: 30vw;
     height: 80vh;
     left:30%;
-  
+    
     color: white;
     text-align: center;
     padding: 2vw;
-
+    
     transition: opacity 1s, left 1.5s;
+}
+
+#hoverContainer:hover #skillsAndLinks{
+    opacity: 1;
+    left:90%;
+    transition: opacity 1s, left 2s;
+    
 }
 
 .containerBackground{
@@ -103,7 +117,7 @@ body{
     align-items: center;
     height: fit-content;
     width: 80%;
-
+    
     background-color: #1D457D;
     border: rgb(0, 0, 0) solid;
     border-radius: 10vh;
@@ -154,32 +168,6 @@ body{
     }
 }
 
-
-
-#hoverContainer:hover #infoContainer{
-    opacity: 1;
-    left:-50%;
-    transition: opacity 1s, left 2s;
-    
-}
-
-#hoverContainer:hover #skillsAndLinks{
-    opacity: 1;
-    left:90%;
-    transition: opacity 1s, left 2s;
-    
-}
-
-#hoverContainer:hover #projectPreview{
-    scale: 1.1;
-    transition: 2s;
-}
-
-.links *:hover{
-    scale: 1.05;
-   
-}
-
 #projectPreview{
     display: flex;
     z-index: 10;
@@ -193,6 +181,11 @@ body{
 #projectPreview img{
     margin: auto;
     width: 100%;
+}
+
+#hoverContainer:hover #projectPreview{
+    scale: 1.1;
+    transition: 2s;
 }
 
 .links{
@@ -213,4 +206,8 @@ body{
     margin: clamp(0.2rem, -0.1750rem + 0.7500vw, 0.5rem);
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.links *:hover{
+    scale: 1.05;
+    
 }
