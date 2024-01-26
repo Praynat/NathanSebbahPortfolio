@@ -211,3 +211,23 @@ body{
     scale: 1.05;
     
 }
+
+
+
+@media (width<=800px) {
+    
+    #hoverContainer{
+        width: 100vw;
+        height: 80vh;
+    }
+
+    #projectPreview{
+        display: flex;
+        z-index: 10;
+        opacity: 1;
+        left: 0%;
+        width: 90vw;
+        height: 80vh;
+        transition: 1s;
+    }
+}
