@@ -255,7 +255,7 @@ header li a, .menuTextContainer li a{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 #about{
-    height: 58vh;
+    height: 65vh;
     
     display: flex;
     flex-direction: column;
@@ -266,11 +266,11 @@ header li a, .menuTextContainer li a{
 }
 
 
-#bestContainer{
+/* #bestContainer{
     height: 30vh;
     width: 90vw;
     margin: 2%;
-}
+} */
 
 #aboutImage{
     border: 0.02rem rgb(0, 0, 0) solid;
@@ -298,12 +298,33 @@ header li a, .menuTextContainer li a{
 
 #aboutImageContainer p{
     font-family: 'Annie Use Your Telescope', cursive;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: white;
     text-align: center;
     margin: 0 2vw;  
+    span{
+        color: #ea1c6e;
+        font-weight: 900;
+    }
+    #underline{
+        font-weight: 600;
+        color: #e91e6f;
+       
+    }
 }
 
+#cvContainer{
+    width: 30%;
+    border-radius: 1rem;
+    background-color: #ea1c6e91;
+    padding: 0.5rem 0.5rem;
+    margin-top: 2vh;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    a{color: white;
+    font-size: 1rem;
+    text-decoration: none;}
+}
 
 /* Skills */
 #skillsContainer{
@@ -394,6 +415,15 @@ svg {
         
   }
 
+  .meter-python {
+    stroke: hsl(0, 0%, 100%);
+    filter: drop-shadow(0 0 5px hsl(186, 100%, 60%));
+    stroke-dasharray: 360;
+    stroke-dashoffset: 250;
+    animation: progress-3 .5s ease-out;
+        
+  }
+
   .htmlProgressbarText{
     stroke:white;
     filter: drop-shadow(0 0 5px #ea1c6e);
@@ -407,6 +437,10 @@ svg {
   .javascriptProgressbarText{
     stroke:white;
     filter: drop-shadow(  hsl(60, 100%, 60%));
+  }
+  .pythonProgressbarText{
+    stroke:white;
+    filter: drop-shadow(  hsl(186, 100%, 60%));
   }
 
   .progressbar-text {
@@ -588,7 +622,8 @@ svg {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1vh;
+    padding: 0px 0.2rem;
+    gap:0.1rem;
 }
 
 .card h3{
@@ -598,18 +633,23 @@ svg {
 }
 
 .card p{
-    
+    color: rgba(255, 255, 255, 0.771);
+    font-family: cursive;
+    font-size: 0.8rem;
 }
 
 .card a{
-    width: 60%;
+    font-family: cursive;
+    font-weight: 100;
+    width: 50%;
     border-radius: 1rem;
-    background-color: #ea1c6e;
+    background-color: #ea1c6ebb;
     color: white;
-    font-size: 1rem;
-    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.1rem 0.3rem;
     margin-top: 1vh;
     text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 /* Contact Page */
