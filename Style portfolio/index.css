@@ -230,7 +230,7 @@ header{
 #textLogo{
     font-family: 'Annie Use Your Telescope', cursive;
     font-size: 1.5rem;
-
+    display: block;
 }
 
 
@@ -706,11 +706,6 @@ svg {
 
 /* Contact Page */
 
-#container4{
-    
-}
-
-
 #contactContainer{
     display: flex;
     flex-direction: row;
@@ -791,12 +786,32 @@ form ::placeholder{
 }
 
 
+#footerContainer{
+    position: absolute;
+    top: 403vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 2rem;
+    p{
+        font-family: 'Annie Use Your Telescope', cursive;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #ea1c6f;
+        margin: 0rem 2rem;
+    }
+}
+
+
 
 @media (width>=1200px){
     #galleryContainer{   
         overflow-x: hidden;
     }
 }
+
+
+
 
 @media (width<=900px){
     .inputForm{
@@ -807,6 +822,14 @@ form ::placeholder{
         width: 19.5vw;
     }
 }
+
+
+@media (width<=700px){
+    #textLogo{
+        display: none;
+    }
+}
+
 
 @media (width<=600px) {
 
@@ -880,7 +903,7 @@ form ::placeholder{
     }
 
     .card{
-        scale: 0.8;
+        scale: 0.9;
     }
 
     #galleryContainer{
